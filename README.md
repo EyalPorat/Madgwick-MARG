@@ -3,7 +3,7 @@ An implementation of the Madgwick Quaternion Update filter, using a MARG (Magnet
 
 For the filter to converge after startup, a higher beta filter gain is necessary (tested with `beta = 2.5` for 10 seconds, then reduced to `beta = 0.1`).
 
-The filter gain zeta describes the amount of gyroscope bias drift compensation (tested with `zeta = 0.0015` as the gyroscope is well calibrated).
+The filter gain zeta describes the amount of gyroscope bias drift compensation (tested with a low `zeta = 0.0015` as the gyroscope is well calibrated).
 
 The optimal update frequency range is quite broad for this filter. Tested optimal at `400hz` (`Dt = 0.0025` sec).
 
